@@ -1,21 +1,23 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Button :disabled=false @onceClick="AppClick">提交按钮</Button>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import Button from './components/Button.vue'
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
+    Button
+  },
+  methods: {
+    AppClick(){
+      alert("你点击了我");
+    }
+  },
 }
 </script>
-
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
