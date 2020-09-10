@@ -13,7 +13,7 @@ export default {
   },
   methods: {
     AppClick(){
-      alert("你点击了我");
+      alert("你点击了我!");
     }
   },
 }
